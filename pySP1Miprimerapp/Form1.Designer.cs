@@ -1,6 +1,6 @@
 ﻿namespace pySP1Miprimerapp
 {
-    partial class Form1
+    partial class frmMiPrimerApp
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,46 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMiPrimerApp));
+            this.lblDeposito = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.Monto = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lblAlquiler = new System.Windows.Forms.Label();
+            this.lblComida = new System.Windows.Forms.Label();
+            this.lblImpuestos = new System.Windows.Forms.Label();
+            this.txtAlqiuler = new System.Windows.Forms.TextBox();
+            this.txtComida = new System.Windows.Forms.TextBox();
+            this.txtImpuestos = new System.Windows.Forms.TextBox();
+            this.txtDeposito = new System.Windows.Forms.TextBox();
+            this.mrcIngresos = new System.Windows.Forms.GroupBox();
+            this.mrcOtrosGastos = new System.Windows.Forms.GroupBox();
+            this.txtMonto = new System.Windows.Forms.TextBox();
+            this.lblMonto = new System.Windows.Forms.Label();
+            this.cmdCancelar = new System.Windows.Forms.Button();
+            this.cmdCalcular = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.mrcIngresos.SuspendLayout();
+            this.mrcOtrosGastos.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lblDeposito
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(6, 61);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Deposito";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblDeposito.AutoSize = true;
+            this.lblDeposito.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeposito.ForeColor = System.Drawing.Color.Black;
+            this.lblDeposito.Location = new System.Drawing.Point(6, 61);
+            this.lblDeposito.Name = "lblDeposito";
+            this.lblDeposito.Size = new System.Drawing.Size(101, 24);
+            this.lblDeposito.TabIndex = 0;
+            this.lblDeposito.Text = "Deposito";
+            this.lblDeposito.Click += new System.EventHandler(this.label1_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.lblAlquiler);
+            this.groupBox1.Controls.Add(this.lblComida);
+            this.groupBox1.Controls.Add(this.lblImpuestos);
+            this.groupBox1.Controls.Add(this.txtAlqiuler);
+            this.groupBox1.Controls.Add(this.txtComida);
+            this.groupBox1.Controls.Add(this.txtImpuestos);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Uighur", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(215, 214);
             this.groupBox1.Name = "groupBox1";
@@ -77,167 +78,168 @@
             this.groupBox1.Text = "Gastos Fijos";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // textBox1
+            // lblAlquiler
             // 
-            this.textBox1.Location = new System.Drawing.Point(173, 48);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(157, 37);
-            this.textBox1.TabIndex = 2;
+            this.lblAlquiler.AutoSize = true;
+            this.lblAlquiler.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAlquiler.Location = new System.Drawing.Point(76, 171);
+            this.lblAlquiler.Name = "lblAlquiler";
+            this.lblAlquiler.Size = new System.Drawing.Size(90, 24);
+            this.lblAlquiler.TabIndex = 5;
+            this.lblAlquiler.Text = "Alquiler";
             // 
-            // textBox2
+            // lblComida
             // 
-            this.textBox2.Location = new System.Drawing.Point(248, 37);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(169, 37);
-            this.textBox2.TabIndex = 0;
+            this.lblComida.AutoSize = true;
+            this.lblComida.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblComida.Location = new System.Drawing.Point(76, 103);
+            this.lblComida.Name = "lblComida";
+            this.lblComida.Size = new System.Drawing.Size(89, 24);
+            this.lblComida.TabIndex = 4;
+            this.lblComida.Text = "Comida";
             // 
-            // textBox3
+            // lblImpuestos
             // 
-            this.textBox3.Location = new System.Drawing.Point(248, 100);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(169, 37);
-            this.textBox3.TabIndex = 1;
+            this.lblImpuestos.AutoSize = true;
+            this.lblImpuestos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImpuestos.Location = new System.Drawing.Point(76, 40);
+            this.lblImpuestos.Name = "lblImpuestos";
+            this.lblImpuestos.Size = new System.Drawing.Size(116, 24);
+            this.lblImpuestos.TabIndex = 3;
+            this.lblImpuestos.Text = "Impuestos";
+            this.lblImpuestos.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox4
+            // txtAlqiuler
             // 
-            this.textBox4.Location = new System.Drawing.Point(248, 168);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(169, 37);
-            this.textBox4.TabIndex = 2;
+            this.txtAlqiuler.Location = new System.Drawing.Point(248, 168);
+            this.txtAlqiuler.Name = "txtAlqiuler";
+            this.txtAlqiuler.Size = new System.Drawing.Size(169, 37);
+            this.txtAlqiuler.TabIndex = 2;
             // 
-            // label2
+            // txtComida
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(76, 40);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 24);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Impuestos";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.txtComida.Location = new System.Drawing.Point(248, 100);
+            this.txtComida.Name = "txtComida";
+            this.txtComida.Size = new System.Drawing.Size(169, 37);
+            this.txtComida.TabIndex = 1;
             // 
-            // label3
+            // txtImpuestos
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(76, 103);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 24);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Comida";
+            this.txtImpuestos.Location = new System.Drawing.Point(248, 37);
+            this.txtImpuestos.Name = "txtImpuestos";
+            this.txtImpuestos.Size = new System.Drawing.Size(169, 37);
+            this.txtImpuestos.TabIndex = 0;
             // 
-            // label4
+            // txtDeposito
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(76, 171);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 24);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Alquiler";
+            this.txtDeposito.Location = new System.Drawing.Point(173, 48);
+            this.txtDeposito.Name = "txtDeposito";
+            this.txtDeposito.Size = new System.Drawing.Size(157, 37);
+            this.txtDeposito.TabIndex = 2;
             // 
-            // groupBox2
+            // mrcIngresos
             // 
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Uighur", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(28, 45);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(368, 116);
-            this.groupBox2.TabIndex = 3;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Ingresos";
+            this.mrcIngresos.Controls.Add(this.txtDeposito);
+            this.mrcIngresos.Controls.Add(this.lblDeposito);
+            this.mrcIngresos.Font = new System.Drawing.Font("Microsoft Uighur", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mrcIngresos.Location = new System.Drawing.Point(28, 45);
+            this.mrcIngresos.Name = "mrcIngresos";
+            this.mrcIngresos.Size = new System.Drawing.Size(368, 116);
+            this.mrcIngresos.TabIndex = 3;
+            this.mrcIngresos.TabStop = false;
+            this.mrcIngresos.Text = "Ingresos";
             // 
-            // groupBox3
+            // mrcOtrosGastos
             // 
-            this.groupBox3.Controls.Add(this.textBox5);
-            this.groupBox3.Controls.Add(this.Monto);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Uighur", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(446, 45);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(368, 116);
-            this.groupBox3.TabIndex = 4;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Otros Gastos";
+            this.mrcOtrosGastos.Controls.Add(this.txtMonto);
+            this.mrcOtrosGastos.Controls.Add(this.lblMonto);
+            this.mrcOtrosGastos.Font = new System.Drawing.Font("Microsoft Uighur", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mrcOtrosGastos.Location = new System.Drawing.Point(446, 45);
+            this.mrcOtrosGastos.Name = "mrcOtrosGastos";
+            this.mrcOtrosGastos.Size = new System.Drawing.Size(368, 116);
+            this.mrcOtrosGastos.TabIndex = 4;
+            this.mrcOtrosGastos.TabStop = false;
+            this.mrcOtrosGastos.Text = "Otros Gastos";
             // 
-            // Monto
+            // txtMonto
             // 
-            this.Monto.AutoSize = true;
-            this.Monto.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Monto.Location = new System.Drawing.Point(13, 61);
-            this.Monto.Name = "Monto";
-            this.Monto.Size = new System.Drawing.Size(73, 24);
-            this.Monto.TabIndex = 0;
-            this.Monto.Text = "Monto";
+            this.txtMonto.Location = new System.Drawing.Point(180, 48);
+            this.txtMonto.Name = "txtMonto";
+            this.txtMonto.Size = new System.Drawing.Size(144, 37);
+            this.txtMonto.TabIndex = 1;
             // 
-            // textBox5
+            // lblMonto
             // 
-            this.textBox5.Location = new System.Drawing.Point(180, 48);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(144, 37);
-            this.textBox5.TabIndex = 1;
+            this.lblMonto.AutoSize = true;
+            this.lblMonto.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonto.Location = new System.Drawing.Point(13, 61);
+            this.lblMonto.Name = "lblMonto";
+            this.lblMonto.Size = new System.Drawing.Size(73, 24);
+            this.lblMonto.TabIndex = 0;
+            this.lblMonto.Text = "Monto";
             // 
-            // button1
+            // cmdCancelar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(28, 493);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 64);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Cancelar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.cmdCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdCancelar.Location = new System.Drawing.Point(28, 493);
+            this.cmdCancelar.Name = "cmdCancelar";
+            this.cmdCancelar.Size = new System.Drawing.Size(147, 64);
+            this.cmdCancelar.TabIndex = 5;
+            this.cmdCancelar.Text = "Cancelar";
+            this.cmdCancelar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // cmdCalcular
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(667, 493);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(147, 64);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Calcular";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.cmdCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdCalcular.Location = new System.Drawing.Point(667, 493);
+            this.cmdCalcular.Name = "cmdCalcular";
+            this.cmdCalcular.Size = new System.Drawing.Size(147, 64);
+            this.cmdCalcular.TabIndex = 6;
+            this.cmdCalcular.Text = "Calcular";
+            this.cmdCalcular.UseVisualStyleBackColor = true;
+            this.cmdCalcular.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form1
+            // frmMiPrimerApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(838, 678);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.cmdCalcular);
+            this.Controls.Add(this.cmdCancelar);
+            this.Controls.Add(this.mrcOtrosGastos);
+            this.Controls.Add(this.mrcIngresos);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "frmMiPrimerApp";
+            this.Text = "Administrador de Gastos Menusales";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.mrcIngresos.ResumeLayout(false);
+            this.mrcIngresos.PerformLayout();
+            this.mrcOtrosGastos.ResumeLayout(false);
+            this.mrcOtrosGastos.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblDeposito;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label Monto;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lblAlquiler;
+        private System.Windows.Forms.Label lblComida;
+        private System.Windows.Forms.Label lblImpuestos;
+        private System.Windows.Forms.TextBox txtAlqiuler;
+        private System.Windows.Forms.TextBox txtComida;
+        private System.Windows.Forms.TextBox txtImpuestos;
+        private System.Windows.Forms.TextBox txtDeposito;
+        private System.Windows.Forms.GroupBox mrcIngresos;
+        private System.Windows.Forms.GroupBox mrcOtrosGastos;
+        private System.Windows.Forms.TextBox txtMonto;
+        private System.Windows.Forms.Label lblMonto;
+        private System.Windows.Forms.Button cmdCancelar;
+        private System.Windows.Forms.Button cmdCalcular;
     }
 }
 

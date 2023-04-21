@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace pySP1Miprimerapp
 {
-    public partial class frmMiPrimerApp : Form
+    public partial class frmAlacena : Form
     {
-        public frmMiPrimerApp()
+        public frmAlacena()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -27,17 +22,12 @@ namespace pySP1Miprimerapp
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
