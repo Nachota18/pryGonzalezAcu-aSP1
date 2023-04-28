@@ -39,14 +39,12 @@
             this.txtImpuestos = new System.Windows.Forms.TextBox();
             this.txtDeposito = new System.Windows.Forms.TextBox();
             this.mrcIngresos = new System.Windows.Forms.GroupBox();
-            this.mrcOtrosGastos = new System.Windows.Forms.GroupBox();
             this.txtMonto = new System.Windows.Forms.TextBox();
             this.lblMonto = new System.Windows.Forms.Label();
             this.cmdCancelar = new System.Windows.Forms.Button();
             this.cmdCalcular = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.mrcIngresos.SuspendLayout();
-            this.mrcOtrosGastos.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblDeposito
@@ -70,7 +68,7 @@
             this.groupBox1.Controls.Add(this.txtComida);
             this.groupBox1.Controls.Add(this.txtImpuestos);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Uighur", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(215, 214);
+            this.groupBox1.Location = new System.Drawing.Point(184, 164);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(448, 230);
             this.groupBox1.TabIndex = 1;
@@ -132,47 +130,36 @@
             // 
             // txtDeposito
             // 
-            this.txtDeposito.Location = new System.Drawing.Point(173, 48);
+            this.txtDeposito.Location = new System.Drawing.Point(248, 48);
             this.txtDeposito.Name = "txtDeposito";
-            this.txtDeposito.Size = new System.Drawing.Size(157, 37);
+            this.txtDeposito.Size = new System.Drawing.Size(169, 37);
             this.txtDeposito.TabIndex = 2;
+            this.txtDeposito.TextChanged += new System.EventHandler(this.txtDeposito_TextChanged);
             // 
             // mrcIngresos
             // 
             this.mrcIngresos.Controls.Add(this.txtDeposito);
             this.mrcIngresos.Controls.Add(this.lblDeposito);
             this.mrcIngresos.Font = new System.Drawing.Font("Microsoft Uighur", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mrcIngresos.Location = new System.Drawing.Point(28, 45);
+            this.mrcIngresos.Location = new System.Drawing.Point(184, 25);
             this.mrcIngresos.Name = "mrcIngresos";
-            this.mrcIngresos.Size = new System.Drawing.Size(368, 116);
+            this.mrcIngresos.Size = new System.Drawing.Size(448, 116);
             this.mrcIngresos.TabIndex = 3;
             this.mrcIngresos.TabStop = false;
             this.mrcIngresos.Text = "Ingresos";
             // 
-            // mrcOtrosGastos
-            // 
-            this.mrcOtrosGastos.Controls.Add(this.txtMonto);
-            this.mrcOtrosGastos.Controls.Add(this.lblMonto);
-            this.mrcOtrosGastos.Font = new System.Drawing.Font("Microsoft Uighur", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mrcOtrosGastos.Location = new System.Drawing.Point(446, 45);
-            this.mrcOtrosGastos.Name = "mrcOtrosGastos";
-            this.mrcOtrosGastos.Size = new System.Drawing.Size(368, 116);
-            this.mrcOtrosGastos.TabIndex = 4;
-            this.mrcOtrosGastos.TabStop = false;
-            this.mrcOtrosGastos.Text = "Otros Gastos";
-            // 
             // txtMonto
             // 
-            this.txtMonto.Location = new System.Drawing.Point(180, 48);
+            this.txtMonto.Location = new System.Drawing.Point(396, 468);
             this.txtMonto.Name = "txtMonto";
-            this.txtMonto.Size = new System.Drawing.Size(144, 37);
+            this.txtMonto.Size = new System.Drawing.Size(188, 20);
             this.txtMonto.TabIndex = 1;
             // 
             // lblMonto
             // 
             this.lblMonto.AutoSize = true;
             this.lblMonto.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMonto.Location = new System.Drawing.Point(13, 61);
+            this.lblMonto.Location = new System.Drawing.Point(260, 462);
             this.lblMonto.Name = "lblMonto";
             this.lblMonto.Size = new System.Drawing.Size(73, 24);
             this.lblMonto.TabIndex = 0;
@@ -181,7 +168,7 @@
             // cmdCancelar
             // 
             this.cmdCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdCancelar.Location = new System.Drawing.Point(28, 493);
+            this.cmdCancelar.Location = new System.Drawing.Point(68, 502);
             this.cmdCancelar.Name = "cmdCancelar";
             this.cmdCancelar.Size = new System.Drawing.Size(147, 64);
             this.cmdCancelar.TabIndex = 5;
@@ -191,7 +178,7 @@
             // cmdCalcular
             // 
             this.cmdCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdCalcular.Location = new System.Drawing.Point(667, 493);
+            this.cmdCalcular.Location = new System.Drawing.Point(632, 502);
             this.cmdCalcular.Name = "cmdCalcular";
             this.cmdCalcular.Size = new System.Drawing.Size(147, 64);
             this.cmdCalcular.TabIndex = 6;
@@ -204,9 +191,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(838, 678);
+            this.Controls.Add(this.txtMonto);
             this.Controls.Add(this.cmdCalcular);
+            this.Controls.Add(this.lblMonto);
             this.Controls.Add(this.cmdCancelar);
-            this.Controls.Add(this.mrcOtrosGastos);
             this.Controls.Add(this.mrcIngresos);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -217,9 +205,8 @@
             this.groupBox1.PerformLayout();
             this.mrcIngresos.ResumeLayout(false);
             this.mrcIngresos.PerformLayout();
-            this.mrcOtrosGastos.ResumeLayout(false);
-            this.mrcOtrosGastos.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -235,7 +222,6 @@
         private System.Windows.Forms.TextBox txtImpuestos;
         private System.Windows.Forms.TextBox txtDeposito;
         private System.Windows.Forms.GroupBox mrcIngresos;
-        private System.Windows.Forms.GroupBox mrcOtrosGastos;
         private System.Windows.Forms.TextBox txtMonto;
         private System.Windows.Forms.Label lblMonto;
         private System.Windows.Forms.Button cmdCancelar;

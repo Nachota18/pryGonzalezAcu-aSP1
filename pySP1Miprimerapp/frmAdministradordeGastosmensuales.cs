@@ -12,6 +12,13 @@ namespace pySP1Miprimerapp
 {
     public partial class frmMiPrimerApp : Form
     {
+        decimal varDeposito = 0;
+        decimal varAlquiler = 0;
+        decimal varComida = 0;
+        decimal varImpuesto = 0;
+        decimal varMonto = 0;
+
+
         public frmMiPrimerApp()
         {
             InitializeComponent();
@@ -34,10 +41,23 @@ namespace pySP1Miprimerapp
 
         private void button2_Click(object sender, EventArgs e)
         {
+            varAlquiler = Convert.ToDecimal(txtAlqiuler.Text);
+            varComida = Convert.ToDecimal(txtComida.Text);  
+            varDeposito=Convert.ToDecimal(txtDeposito.Text);
+            varImpuesto = Convert.ToDecimal(txtImpuestos.Text);
+            varMonto = Convert.ToDecimal(txtDeposito.Text);
 
+            varMonto = varDeposito - (varAlquiler + varComida + varImpuesto);
+
+            txtMonto.Text = varMonto.ToString();
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDeposito_TextChanged(object sender, EventArgs e)
         {
 
         }
