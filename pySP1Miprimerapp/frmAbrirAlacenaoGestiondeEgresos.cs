@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pySP1Miprimerapp
 {
-    public partial class frmAbrirAlacenaoGestiondeEgresos : Form
+    public partial class frmAplicaciones : Form
     {
-        public frmAbrirAlacenaoGestiondeEgresos()
+        public frmAplicaciones()
         {
             InitializeComponent();
         }
@@ -28,6 +28,11 @@ namespace pySP1Miprimerapp
         {
             frmMiPrimerApp ventanaMiprimerApp = new frmMiPrimerApp();
             ventanaMiprimerApp.ShowDialog();
+        }
+
+        private void frmAplicaciones_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
