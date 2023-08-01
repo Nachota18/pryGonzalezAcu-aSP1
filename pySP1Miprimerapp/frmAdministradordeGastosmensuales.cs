@@ -61,5 +61,15 @@ namespace pySP1Miprimerapp
         {
 
         }
+
+        private void cmdCancelar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMonto_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

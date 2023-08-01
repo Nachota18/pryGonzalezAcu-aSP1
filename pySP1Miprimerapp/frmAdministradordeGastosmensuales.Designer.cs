@@ -70,7 +70,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Uighur", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(184, 164);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(448, 230);
+            this.groupBox1.Size = new System.Drawing.Size(343, 230);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Gastos Fijos";
@@ -80,7 +80,7 @@
             // 
             this.lblAlquiler.AutoSize = true;
             this.lblAlquiler.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAlquiler.Location = new System.Drawing.Point(76, 171);
+            this.lblAlquiler.Location = new System.Drawing.Point(17, 168);
             this.lblAlquiler.Name = "lblAlquiler";
             this.lblAlquiler.Size = new System.Drawing.Size(90, 24);
             this.lblAlquiler.TabIndex = 5;
@@ -90,7 +90,7 @@
             // 
             this.lblComida.AutoSize = true;
             this.lblComida.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblComida.Location = new System.Drawing.Point(76, 103);
+            this.lblComida.Location = new System.Drawing.Point(16, 105);
             this.lblComida.Name = "lblComida";
             this.lblComida.Size = new System.Drawing.Size(89, 24);
             this.lblComida.TabIndex = 4;
@@ -100,7 +100,7 @@
             // 
             this.lblImpuestos.AutoSize = true;
             this.lblImpuestos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblImpuestos.Location = new System.Drawing.Point(76, 40);
+            this.lblImpuestos.Location = new System.Drawing.Point(16, 37);
             this.lblImpuestos.Name = "lblImpuestos";
             this.lblImpuestos.Size = new System.Drawing.Size(116, 24);
             this.lblImpuestos.TabIndex = 3;
@@ -109,28 +109,28 @@
             // 
             // txtAlqiuler
             // 
-            this.txtAlqiuler.Location = new System.Drawing.Point(248, 168);
+            this.txtAlqiuler.Location = new System.Drawing.Point(149, 163);
             this.txtAlqiuler.Name = "txtAlqiuler";
             this.txtAlqiuler.Size = new System.Drawing.Size(169, 37);
             this.txtAlqiuler.TabIndex = 2;
             // 
             // txtComida
             // 
-            this.txtComida.Location = new System.Drawing.Point(248, 100);
+            this.txtComida.Location = new System.Drawing.Point(149, 105);
             this.txtComida.Name = "txtComida";
             this.txtComida.Size = new System.Drawing.Size(169, 37);
             this.txtComida.TabIndex = 1;
             // 
             // txtImpuestos
             // 
-            this.txtImpuestos.Location = new System.Drawing.Point(248, 37);
+            this.txtImpuestos.Location = new System.Drawing.Point(149, 32);
             this.txtImpuestos.Name = "txtImpuestos";
             this.txtImpuestos.Size = new System.Drawing.Size(169, 37);
             this.txtImpuestos.TabIndex = 0;
             // 
             // txtDeposito
             // 
-            this.txtDeposito.Location = new System.Drawing.Point(248, 48);
+            this.txtDeposito.Location = new System.Drawing.Point(134, 48);
             this.txtDeposito.Name = "txtDeposito";
             this.txtDeposito.Size = new System.Drawing.Size(169, 37);
             this.txtDeposito.TabIndex = 2;
@@ -143,14 +143,14 @@
             this.mrcIngresos.Font = new System.Drawing.Font("Microsoft Uighur", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcIngresos.Location = new System.Drawing.Point(184, 25);
             this.mrcIngresos.Name = "mrcIngresos";
-            this.mrcIngresos.Size = new System.Drawing.Size(448, 116);
+            this.mrcIngresos.Size = new System.Drawing.Size(343, 116);
             this.mrcIngresos.TabIndex = 3;
             this.mrcIngresos.TabStop = false;
             this.mrcIngresos.Text = "Ingresos";
             // 
             // txtMonto
             // 
-            this.txtMonto.Location = new System.Drawing.Point(396, 468);
+            this.txtMonto.Location = new System.Drawing.Point(318, 451);
             this.txtMonto.Name = "txtMonto";
             this.txtMonto.Size = new System.Drawing.Size(188, 20);
             this.txtMonto.TabIndex = 1;
@@ -159,26 +159,28 @@
             // 
             this.lblMonto.AutoSize = true;
             this.lblMonto.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMonto.Location = new System.Drawing.Point(260, 462);
+            this.lblMonto.Location = new System.Drawing.Point(216, 447);
             this.lblMonto.Name = "lblMonto";
             this.lblMonto.Size = new System.Drawing.Size(73, 24);
             this.lblMonto.TabIndex = 0;
             this.lblMonto.Text = "Monto";
+            this.lblMonto.Click += new System.EventHandler(this.lblMonto_Click);
             // 
             // cmdCancelar
             // 
             this.cmdCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdCancelar.Location = new System.Drawing.Point(68, 502);
+            this.cmdCancelar.Location = new System.Drawing.Point(44, 523);
             this.cmdCancelar.Name = "cmdCancelar";
             this.cmdCancelar.Size = new System.Drawing.Size(147, 64);
             this.cmdCancelar.TabIndex = 5;
             this.cmdCancelar.Text = "Cancelar";
             this.cmdCancelar.UseVisualStyleBackColor = true;
+            this.cmdCancelar.Click += new System.EventHandler(this.cmdCancelar_Click);
             // 
             // cmdCalcular
             // 
             this.cmdCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdCalcular.Location = new System.Drawing.Point(632, 502);
+            this.cmdCalcular.Location = new System.Drawing.Point(532, 523);
             this.cmdCalcular.Name = "cmdCalcular";
             this.cmdCalcular.Size = new System.Drawing.Size(147, 64);
             this.cmdCalcular.TabIndex = 6;
@@ -190,7 +192,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(838, 678);
+            this.ClientSize = new System.Drawing.Size(710, 678);
             this.Controls.Add(this.txtMonto);
             this.Controls.Add(this.cmdCalcular);
             this.Controls.Add(this.lblMonto);
