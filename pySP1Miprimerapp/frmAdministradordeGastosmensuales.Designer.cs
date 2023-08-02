@@ -109,14 +109,14 @@
             // 
             // txtAlqiuler
             // 
-            this.txtAlqiuler.Location = new System.Drawing.Point(149, 163);
+            this.txtAlqiuler.Location = new System.Drawing.Point(122, 163);
             this.txtAlqiuler.Name = "txtAlqiuler";
             this.txtAlqiuler.Size = new System.Drawing.Size(169, 37);
             this.txtAlqiuler.TabIndex = 2;
             // 
             // txtComida
             // 
-            this.txtComida.Location = new System.Drawing.Point(149, 105);
+            this.txtComida.Location = new System.Drawing.Point(122, 105);
             this.txtComida.Name = "txtComida";
             this.txtComida.Size = new System.Drawing.Size(169, 37);
             this.txtComida.TabIndex = 1;
@@ -130,7 +130,7 @@
             // 
             // txtDeposito
             // 
-            this.txtDeposito.Location = new System.Drawing.Point(134, 48);
+            this.txtDeposito.Location = new System.Drawing.Point(122, 48);
             this.txtDeposito.Name = "txtDeposito";
             this.txtDeposito.Size = new System.Drawing.Size(169, 37);
             this.txtDeposito.TabIndex = 2;
@@ -150,7 +150,7 @@
             // 
             // txtMonto
             // 
-            this.txtMonto.Location = new System.Drawing.Point(318, 451);
+            this.txtMonto.Location = new System.Drawing.Point(306, 451);
             this.txtMonto.Name = "txtMonto";
             this.txtMonto.Size = new System.Drawing.Size(188, 20);
             this.txtMonto.TabIndex = 1;
